@@ -24,7 +24,7 @@ let selectOptions = game.user.isGM ? `
 	<select id="output-options" />
 		<option value="popup">Popup</option>
 		<option value="chat">Chat</option>
-		<option value="both">Both</option>
+		<option value="both" selected>Both</option>
 	</select>
 </div>
 <br />
