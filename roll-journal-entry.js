@@ -6,8 +6,8 @@ function showJournalEntry(journalEntry) {
 async function rollEntry() {
     const table = game.tables.getName('Adventure site leads');
     if (!table) return ui.notifications.error("Table doesn't exist.");
-    const { results } = await table.drawMany(1, {
-        displayChat: false,
+    const { results } = await table.draw({
+        displayChat: false
     });
     results.forEach(async (r) => {
         showJournalEntry(r.data.text + ' - Intro');
